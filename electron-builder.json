@@ -35,8 +35,6 @@
     "allowToChangeInstallationDirectory": true,
     "createDesktopShortcut": true,
     "createStartMenuShortcut": true,
-    "shortcutName": "SIMPLIFIED CYBER DEFENCE",
-    "installerIcon": "assets/icon.ico",
-    "uninstallerIcon": "assets/icon.ico"
+    "shortcutName": "SIMPLIFIED CYBER DEFENCE"
   }
 }
