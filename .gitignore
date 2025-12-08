@@ -42,3 +42,4 @@ next-env.d.ts
 cyberguard.db
 *.db
 *.db-journal
+package-lock.json
