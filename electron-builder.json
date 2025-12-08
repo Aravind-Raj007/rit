@@ -1,0 +1,42 @@
+{
+  "appId": "com.cyberguard.lite",
+  "productName": "SIMPLIFIED CYBER DEFENCE FOR THREATS",
+  "directories": {
+    "buildResources": "assets",
+    "output": "release"
+  },
+  "files": [
+    "out/**/*",
+    "lib/**/*",
+    "node_modules/**/*",
+    "electron/**/*",
+    "package.json"
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      },
+      {
+        "target": "portable",
+        "arch": [
+          "x64"
+        ]
+      }
+    ],
+    "certificateFile": null,
+    "certificatePassword": null
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "SIMPLIFIED CYBER DEFENCE",
+    "installerIcon": "assets/icon.ico",
+    "uninstallerIcon": "assets/icon.ico"
+  }
+}

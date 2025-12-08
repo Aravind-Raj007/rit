@@ -1,0 +1,296 @@
+/* File Protection Styles */
+
+.container {
+  padding: 0;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.header h2 {
+  font-size: 24px;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+}
+
+.header p {
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Toggle Buttons */
+.toggleGroup {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.toggleBtn {
+  flex: 1;
+  padding: 12px 24px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toggleBtn:hover {
+  border-color: #667eea;
+  background: #f3f4f6;
+}
+
+.toggleBtn.active {
+  border-color: #667eea;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+/* Error and Success Messages */
+.error,
+.success {
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: slideIn 0.3s ease-out;
+}
+
+.error {
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+
+.success {
+  background: #d1fae5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+}
+
+.errorIcon,
+.successIcon {
+  font-size: 20px;
+}
+
+.successMessage {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.successPath {
+  font-size: 12px;
+  opacity: 0.8;
+  word-break: break-all;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* File Section */
+.fileSection {
+  margin-bottom: 24px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.selectBtn {
+  width: 100%;
+  padding: 48px 24px;
+  border: 2px dashed #d1d5db;
+  background: #f9fafb;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.selectBtn:hover {
+  border-color: #667eea;
+  background: #f3f4f6;
+  color: #667eea;
+}
+
+.selectedFile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: white;
+  border: 2px solid #667eea;
+  border-radius: 12px;
+}
+
+.fileIcon {
+  font-size: 40px;
+}
+
+.fileInfo {
+  flex: 1;
+}
+
+.fileName {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.fileSize {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.removeBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: #fee2e2;
+  color: #991b1b;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.removeBtn:hover {
+  background: #fecaca;
+}
+
+/* Password Section */
+.passwordSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input {
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Action Button */
+.actionBtn {
+  width: 100%;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 24px;
+}
+
+.actionBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.actionBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Info Box */
+.infoBox {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.infoBox h4 {
+  font-size: 14px;
+  color: #1f2937;
+  margin: 0 0 12px 0;
+}
+
+.infoBox ul {
+  margin: 0;
+  padding-left: 24px;
+  list-style: none;
+}
+
+.infoBox li {
+  font-size: 13px;
+  color: #374151;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.infoBox li::before {
+  content: '→';
+  position: absolute;
+  left: -20px;
+  color: #667eea;
+  font-weight: 700;
+}
+
+.infoBox strong {
+  color: #991b1b;
+}
+
+/* Security Notice */
+.securityNotice {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  gap: 16px;
+}
+
+.lockIcon {
+  font-size: 32px;
+}
+
+.securityNotice strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.securityNotice p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.9;
+}

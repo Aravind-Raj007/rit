@@ -1,0 +1,294 @@
+/* Threat Scanner Styles */
+
+.container {
+  padding: 0;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.header h2 {
+  font-size: 24px;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+}
+
+.header p {
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Toggle Buttons */
+.toggleGroup {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.toggleBtn {
+  flex: 1;
+  padding: 12px 24px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toggleBtn:hover {
+  border-color: #667eea;
+  background: #f3f4f6;
+}
+
+.toggleBtn.active {
+  border-color: #667eea;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+/* Input Section */
+.inputSection {
+  margin-bottom: 16px;
+}
+
+.textarea,
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.textarea:focus,
+.input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Scan Button */
+.scanBtn {
+  width: 100%;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 24px;
+}
+
+.scanBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.scanBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Results */
+.results {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.scoreCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 24px;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+}
+
+.scoreCircle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 6px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.scoreValue {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.scoreLabel {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.verdict {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.verdictIcon {
+  font-size: 48px;
+}
+
+.verdictText {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Threats Section */
+.threatsSection {
+  margin-bottom: 24px;
+}
+
+.threatsSection h3 {
+  font-size: 18px;
+  color: #1f2937;
+  margin: 0 0 16px 0;
+}
+
+.threatsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.threatItem {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  border-left: 4px solid #f59e0b;
+}
+
+.threatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.threatCategory {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.severity {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.severity.low {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.severity.medium {
+  background: #fed7aa;
+  color: #c2410c;
+}
+
+.severity.high {
+  background: #fecaca;
+  color: #991b1b;
+}
+
+.threatPattern {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Recommendations */
+.recommendations {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.recommendations h3 {
+  font-size: 16px;
+  color: #1f2937;
+  margin: 0 0 12px 0;
+}
+
+.recommendationsList {
+  margin: 0;
+  padding-left: 24px;
+  list-style: none;
+}
+
+.recommendationsList li {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.recommendationsList li::before {
+  content: '→';
+  position: absolute;
+  left: -20px;
+  color: #667eea;
+  font-weight: 700;
+}
+
+/* Examples */
+.examples {
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.examples h4 {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 0 12px 0;
+}
+
+.exampleBtns {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.exampleBtn {
+  padding: 8px 16px;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.exampleBtn:hover {
+  border-color: #667eea;
+  color: #667eea;
+  background: #f9fafb;
+}
