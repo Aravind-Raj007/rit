@@ -130,6 +130,14 @@ class DatabaseManager {
     }
   }
 
+  /**
+   * Check if database is initialized
+   * @returns {boolean} True if database is ready
+   */
+  isInitialized() {
+    return this.db !== null;
+  }
+
   // ==================== USER OPERATIONS ====================
 
   /**
@@ -140,6 +148,15 @@ class DatabaseManager {
    */
   createUser(username, passwordHash) {
     try {
+      // Check if database is initialized
+      if (!this.db) {
+        console.error('❌ Database not initialized. Call initialize() first.');
+        return {
+          success: false,
+          error: 'Database not initialized. Please restart the application.'
+        };
+      }
+
       const stmt = this.db.prepare(`
         INSERT INTO users (username, password_hash, created_at)
         VALUES (?, ?, ?)
@@ -170,6 +187,15 @@ class DatabaseManager {
    */
   getUserByUsername(username) {
     try {
+      // Check if database is initialized
+      if (!this.db) {
+        console.error('❌ Database not initialized. Call initialize() first.');
+        return {
+          success: false,
+          error: 'Database not initialized'
+        };
+      }
+
       const stmt = this.db.prepare('SELECT * FROM users WHERE username = ?');
       const user = stmt.get(username);
       

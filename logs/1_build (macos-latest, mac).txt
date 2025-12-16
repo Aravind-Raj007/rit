@@ -1,0 +1,295 @@
+﻿2025-12-08T12:05:16.1080460Z Current runner version: '2.329.0'
+2025-12-08T12:05:16.1096270Z ##[group]Runner Image Provisioner
+2025-12-08T12:05:16.1096780Z Hosted Compute Agent
+2025-12-08T12:05:16.1097120Z Version: 20251202.455
+2025-12-08T12:05:16.1097490Z Commit: 6c10caca4910e198df60de23adf20ad317c474e3
+2025-12-08T12:05:16.1097930Z Build Date: 2025-12-02T15:56:59Z
+2025-12-08T12:05:16.1098330Z Worker ID: {19c48729-56e4-4c2d-b6d7-340aee86908c}
+2025-12-08T12:05:16.1098750Z ##[endgroup]
+2025-12-08T12:05:16.1099070Z ##[group]Operating System
+2025-12-08T12:05:16.1099430Z macOS
+2025-12-08T12:05:16.1099730Z 15.7.2
+2025-12-08T12:05:16.1100000Z 24G325
+2025-12-08T12:05:16.1100280Z ##[endgroup]
+2025-12-08T12:05:16.1100590Z ##[group]Runner Image
+2025-12-08T12:05:16.1100920Z Image: macos-15-arm64
+2025-12-08T12:05:16.1101230Z Version: 20251203.0057.1
+2025-12-08T12:05:16.1101940Z Included Software: https://github.com/actions/runner-images/blob/macos-15-arm64/20251203.0057.1/images/macos/macos-15-arm64-Readme.md
+2025-12-08T12:05:16.1102980Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-15-arm64%2F20251203.0057.1
+2025-12-08T12:05:16.1103610Z ##[endgroup]
+2025-12-08T12:05:16.1104330Z ##[group]GITHUB_TOKEN Permissions
+2025-12-08T12:05:16.1105340Z Contents: read
+2025-12-08T12:05:16.1105650Z Metadata: read
+2025-12-08T12:05:16.1105950Z Packages: read
+2025-12-08T12:05:16.1106240Z ##[endgroup]
+2025-12-08T12:05:16.1107590Z Secret source: Actions
+2025-12-08T12:05:16.1107970Z Prepare workflow directory
+2025-12-08T12:05:16.1403230Z Prepare all required actions
+2025-12-08T12:05:16.1436930Z Getting action download info
+2025-12-08T12:05:16.6499460Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2025-12-08T12:05:17.7064950Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2025-12-08T12:05:17.9560050Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2025-12-08T12:05:18.4831780Z Complete job name: build (macos-latest, mac)
+2025-12-08T12:05:18.6021000Z ##[group]Run actions/checkout@v4
+2025-12-08T12:05:18.6021880Z with:
+2025-12-08T12:05:18.6022170Z   repository: Aravind-Raj007/rit
+2025-12-08T12:05:18.6022730Z   token: ***
+2025-12-08T12:05:18.6023000Z   ssh-strict: true
+2025-12-08T12:05:18.6023270Z   ssh-user: git
+2025-12-08T12:05:18.6023560Z   persist-credentials: true
+2025-12-08T12:05:18.6023860Z   clean: true
+2025-12-08T12:05:18.6024150Z   sparse-checkout-cone-mode: true
+2025-12-08T12:05:18.6024480Z   fetch-depth: 1
+2025-12-08T12:05:18.6024760Z   fetch-tags: false
+2025-12-08T12:05:18.6025040Z   show-progress: true
+2025-12-08T12:05:18.6025330Z   lfs: false
+2025-12-08T12:05:18.6025590Z   submodules: false
+2025-12-08T12:05:18.6025880Z   set-safe-directory: true
+2025-12-08T12:05:18.6026310Z ##[endgroup]
+2025-12-08T12:05:19.3774340Z Syncing repository: Aravind-Raj007/rit
+2025-12-08T12:05:19.3881050Z ##[group]Getting Git version info
+2025-12-08T12:05:19.3894430Z Working directory is '/Users/runner/work/rit/rit'
+2025-12-08T12:05:19.3897000Z [command]/opt/homebrew/bin/git version
+2025-12-08T12:05:19.3898010Z git version 2.50.1
+2025-12-08T12:05:19.3900860Z ##[endgroup]
+2025-12-08T12:05:19.3915250Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/0464e6da-1372-4f44-9e7c-90bbab02b544/.gitconfig'
+2025-12-08T12:05:19.3919280Z Temporarily overriding HOME='/Users/runner/work/_temp/0464e6da-1372-4f44-9e7c-90bbab02b544' before making global git config changes
+2025-12-08T12:05:19.3921360Z Adding repository directory to the temporary git global config as a safe directory
+2025-12-08T12:05:19.3922510Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/rit/rit
+2025-12-08T12:05:19.3926540Z Deleting the contents of '/Users/runner/work/rit/rit'
+2025-12-08T12:05:19.3930900Z ##[group]Initializing the repository
+2025-12-08T12:05:19.3939080Z [command]/opt/homebrew/bin/git init /Users/runner/work/rit/rit
+2025-12-08T12:05:19.6008330Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-12-08T12:05:19.6504370Z hint: is subject to change. To configure the initial branch name to use in all
+2025-12-08T12:05:19.6607160Z hint: of your new repositories, which will suppress this warning, call:
+2025-12-08T12:05:19.6715070Z hint:
+2025-12-08T12:05:19.6825150Z hint: 	git config --global init.defaultBranch <name>
+2025-12-08T12:05:19.6942190Z hint:
+2025-12-08T12:05:19.7052940Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-12-08T12:05:19.7155450Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-12-08T12:05:19.7261170Z hint:
+2025-12-08T12:05:19.7363590Z hint: 	git branch -m <name>
+2025-12-08T12:05:19.7413840Z hint:
+2025-12-08T12:05:19.7500000Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-12-08T12:05:19.7602590Z Initialized empty Git repository in /Users/runner/work/rit/rit/.git/
+2025-12-08T12:05:19.7790760Z [command]/opt/homebrew/bin/git remote add origin https://github.com/Aravind-Raj007/rit
+2025-12-08T12:05:19.8021950Z ##[endgroup]
+2025-12-08T12:05:19.8026450Z ##[group]Disabling automatic garbage collection
+2025-12-08T12:05:19.8031520Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+2025-12-08T12:05:19.8143570Z ##[endgroup]
+2025-12-08T12:05:19.8164040Z ##[group]Setting up auth
+2025-12-08T12:05:19.8165570Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-12-08T12:05:19.8168490Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-12-08T12:05:19.8171520Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-12-08T12:05:19.8183110Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-12-08T12:05:19.8972420Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2025-12-08T12:05:19.9101840Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2025-12-08T12:05:20.0694110Z [command]/opt/homebrew/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-12-08T12:05:20.1008260Z ##[endgroup]
+2025-12-08T12:05:20.1112860Z ##[group]Fetching the repository
+2025-12-08T12:05:20.1228580Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5ffca424d059a4dcfa6a76771983c2c9da123055:refs/remotes/origin/main
+2025-12-08T12:05:20.6294960Z From https://github.com/Aravind-Raj007/rit
+2025-12-08T12:05:20.6298960Z  * [new ref]         5ffca424d059a4dcfa6a76771983c2c9da123055 -> origin/main
+2025-12-08T12:05:20.6452400Z ##[endgroup]
+2025-12-08T12:05:20.6466860Z ##[group]Determining the checkout info
+2025-12-08T12:05:20.6470750Z ##[endgroup]
+2025-12-08T12:05:20.6472830Z [command]/opt/homebrew/bin/git sparse-checkout disable
+2025-12-08T12:05:20.6523450Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+2025-12-08T12:05:20.6707880Z ##[group]Checking out the ref
+2025-12-08T12:05:20.6709580Z [command]/opt/homebrew/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-12-08T12:05:20.7016810Z Switched to a new branch 'main'
+2025-12-08T12:05:20.7038320Z branch 'main' set up to track 'origin/main'.
+2025-12-08T12:05:20.7059340Z ##[endgroup]
+2025-12-08T12:05:20.7194480Z [command]/opt/homebrew/bin/git log -1 --format=%H
+2025-12-08T12:05:20.7306000Z 5ffca424d059a4dcfa6a76771983c2c9da123055
+2025-12-08T12:05:20.7865220Z ##[group]Run actions/setup-node@v4
+2025-12-08T12:05:20.7878330Z with:
+2025-12-08T12:05:20.7879600Z   node-version: 20
+2025-12-08T12:05:20.7881110Z   always-auth: false
+2025-12-08T12:05:20.7882620Z   check-latest: false
+2025-12-08T12:05:20.7884050Z   token: ***
+2025-12-08T12:05:20.7884630Z ##[endgroup]
+2025-12-08T12:05:21.1780940Z Found in cache @ /Users/runner/hostedtoolcache/node/20.19.6/arm64
+2025-12-08T12:05:21.1788600Z ##[group]Environment details
+2025-12-08T12:05:21.8553710Z node: v20.19.6
+2025-12-08T12:05:21.8577640Z npm: 10.8.2
+2025-12-08T12:05:21.8596900Z yarn: 1.22.22
+2025-12-08T12:05:21.8614170Z ##[endgroup]
+2025-12-08T12:05:21.8713650Z ##[group]Run npm install
+2025-12-08T12:05:21.8714260Z [36;1mnpm install[0m
+2025-12-08T12:05:21.8754460Z shell: /bin/bash -e {0}
+2025-12-08T12:05:21.8754980Z ##[endgroup]
+2025-12-08T12:05:33.2899400Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+2025-12-08T12:05:34.0451920Z npm warn deprecated boolean@3.2.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+2025-12-08T12:05:34.0552750Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+2025-12-08T12:05:53.8696220Z 
+2025-12-08T12:05:53.8699760Z added 388 packages, and audited 389 packages in 32s
+2025-12-08T12:05:53.8700090Z 
+2025-12-08T12:05:53.8700340Z 59 packages are looking for funding
+2025-12-08T12:05:53.8701030Z   run `npm fund` for details
+2025-12-08T12:05:53.8799920Z 
+2025-12-08T12:05:53.8801510Z 1 moderate severity vulnerability
+2025-12-08T12:05:53.8802650Z 
+2025-12-08T12:05:53.8803570Z To address all issues (including breaking changes), run:
+2025-12-08T12:05:53.8804520Z   npm audit fix --force
+2025-12-08T12:05:53.8804980Z 
+2025-12-08T12:05:53.8805240Z Run `npm audit` for details.
+2025-12-08T12:05:53.9248940Z ##[group]Run npm run build
+2025-12-08T12:05:53.9249250Z [36;1mnpm run build[0m
+2025-12-08T12:05:53.9626700Z shell: /bin/bash -e {0}
+2025-12-08T12:05:53.9626950Z ##[endgroup]
+2025-12-08T12:05:54.2927840Z 
+2025-12-08T12:05:54.2928360Z > cyberguard-lite@1.0.0 build
+2025-12-08T12:05:54.2929200Z > next build
+2025-12-08T12:05:54.2929420Z 
+2025-12-08T12:05:55.2969190Z ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+2025-12-08T12:05:55.3271640Z Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2025-12-08T12:05:55.3272480Z This information is used to shape Next.js' roadmap and prioritize features.
+2025-12-08T12:05:55.3277410Z You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2025-12-08T12:05:55.3290240Z https://nextjs.org/telemetry
+2025-12-08T12:05:55.3290480Z 
+2025-12-08T12:05:55.3834030Z   ▲ Next.js 14.2.33
+2025-12-08T12:05:55.3847610Z 
+2025-12-08T12:05:55.3927320Z    Linting and checking validity of types ...
+2025-12-08T12:05:55.5203470Z    Creating an optimized production build ...
+2025-12-08T12:06:04.1760360Z  ✓ Compiled successfully
+2025-12-08T12:06:04.1882150Z    Collecting page data ...
+2025-12-08T12:06:04.6793750Z    Generating static pages (0/3) ...
+2025-12-08T12:06:04.8463810Z  ✓ Generating static pages (3/3)
+2025-12-08T12:06:04.9980320Z    Finalizing page optimization ...
+2025-12-08T12:06:05.0107030Z    Collecting build traces ...
+2025-12-08T12:06:09.9576180Z 
+2025-12-08T12:06:09.9677860Z Route (pages)                             Size     First Load JS
+2025-12-08T12:06:09.9780310Z ┌ ○ /                                     12.4 kB        92.4 kB
+2025-12-08T12:06:09.9885010Z ├   └ css/3e3a26ef413674a5.css            4.99 kB
+2025-12-08T12:06:09.9987200Z ├   /_app                                 0 B              80 kB
+2025-12-08T12:06:09.9996600Z └ ○ /404                                  180 B          80.1 kB
+2025-12-08T12:06:09.9999040Z + First Load JS shared by all             80.8 kB
+2025-12-08T12:06:10.0001470Z   ├ chunks/framework-64ad27b21261a9ce.js  44.8 kB
+2025-12-08T12:06:10.0003000Z   ├ chunks/main-bec63c43e6b8f591.js       34.1 kB
+2025-12-08T12:06:10.0112910Z   └ other shared chunks (total)           1.9 kB
+2025-12-08T12:06:10.0113890Z 
+2025-12-08T12:06:10.0114900Z ○  (Static)  prerendered as static content
+2025-12-08T12:06:10.0115360Z 
+2025-12-08T12:06:10.0362850Z ##[group]Run npx electron-builder --mac
+2025-12-08T12:06:10.0363230Z [36;1mnpx electron-builder --mac[0m
+2025-12-08T12:06:10.0431250Z shell: /bin/bash -e {0}
+2025-12-08T12:06:10.0431620Z env:
+2025-12-08T12:06:10.0432110Z   CSC_IDENTITY_AUTO_DISCOVERY: false
+2025-12-08T12:06:10.0432760Z   GH_TOKEN: ***
+2025-12-08T12:06:10.0433120Z ##[endgroup]
+2025-12-08T12:06:11.9095520Z   • electron-builder  version=24.13.3 os=24.6.0
+2025-12-08T12:06:11.9114230Z   • artifacts will be published if draft release exists  reason=CI detected
+2025-12-08T12:06:11.9201830Z   • loaded configuration  file=/Users/runner/work/rit/rit/electron-builder.json
+2025-12-08T12:06:12.4579220Z   • rebuilding native dependencies  dependencies=bcrypt@6.0.0, better-sqlite3@12.5.0 platform=darwin arch=arm64
+2025-12-08T12:06:12.4593840Z   • install prebuilt binary  name=better-sqlite3 version=12.5.0 platform=darwin arch=arm64 napi=
+2025-12-08T12:06:12.8702320Z   • build native dependency from sources  name=better-sqlite3
+2025-12-08T12:06:12.8804270Z                                           version=12.5.0
+2025-12-08T12:06:12.8906260Z                                           platform=darwin
+2025-12-08T12:06:12.9006470Z                                           arch=arm64
+2025-12-08T12:06:12.9108050Z                                           napi=
+2025-12-08T12:06:12.9214210Z                                           reason=prebuild-install failed with error (run with env DEBUG=electron-builder to get more information)
+2025-12-08T12:06:12.9317470Z                                           error=prebuild-install info begin Prebuild-install version 7.1.3
+2025-12-08T12:06:12.9418350Z     prebuild-install warn install prebuilt binaries enforced with --force!
+2025-12-08T12:06:12.9521000Z     prebuild-install warn install prebuilt binaries may be out of date!
+2025-12-08T12:06:12.9620720Z     prebuild-install info looking for local prebuild @ prebuilds/better-sqlite3-v12.5.0-electron-v118-darwin-arm64.tar.gz
+2025-12-08T12:06:12.9725670Z     prebuild-install info looking for cached prebuild @ /Users/runner/.npm/_prebuilds/24d2d8-better-sqlite3-v12.5.0-electron-v118-darwin-arm64.tar.gz
+2025-12-08T12:06:12.9825790Z     prebuild-install http request GET https://github.com/WiseLibs/better-sqlite3/releases/download/v12.5.0/better-sqlite3-v12.5.0-electron-v118-darwin-arm64.tar.gz
+2025-12-08T12:06:12.9927990Z     prebuild-install http 404 https://github.com/WiseLibs/better-sqlite3/releases/download/v12.5.0/better-sqlite3-v12.5.0-electron-v118-darwin-arm64.tar.gz
+2025-12-08T12:06:13.0032680Z     prebuild-install warn install No prebuilt binaries found (target=27.3.11 runtime=electron arch=arm64 libc= platform=darwin)
+2025-12-08T12:06:13.0132800Z     
+2025-12-08T12:06:55.6573500Z   • packaging       platform=darwin arch=arm64 electron=27.3.11 appOutDir=release/mac-arm64
+2025-12-08T12:06:55.9789700Z   • downloading     url=https://github.com/electron/electron/releases/download/v27.3.11/electron-v27.3.11-darwin-arm64.zip size=93 MB parts=6
+2025-12-08T12:06:56.6470410Z   • downloaded      url=https://github.com/electron/electron/releases/download/v27.3.11/electron-v27.3.11-darwin-arm64.zip duration=948ms
+2025-12-08T12:07:08.4416120Z   • skipped macOS application code signing  reason=, see https://electron.build/code-signing CSC_IDENTITY_AUTO_DISCOVERY=false
+2025-12-08T12:07:08.4516650Z   • building        target=macOS zip arch=arm64 file=release/SIMPLIFIED CYBER DEFENCE FOR THREATS-1.0.0-arm64-mac.zip
+2025-12-08T12:07:08.4624840Z   • building        target=DMG arch=arm64 file=release/SIMPLIFIED CYBER DEFENCE FOR THREATS-1.0.0-arm64.dmg
+2025-12-08T12:07:08.4725820Z   • Detected arm64 process, HFS+ is unavailable. Creating dmg with APFS - supports Mac OSX 10.12+
+2025-12-08T12:08:05.0737640Z   • building block map  blockMapFile=release/SIMPLIFIED CYBER DEFENCE FOR THREATS-1.0.0-arm64.dmg.blockmap
+2025-12-08T12:08:06.8886400Z   • publishing      publisher=Github (owner: Aravind-Raj007, project: rit, version: 1.0.0)
+2025-12-08T12:08:06.8994440Z   • uploading       file=SIMPLIFIED-CYBER-DEFENCE-FOR-THREATS-1.0.0-arm64.dmg.blockmap provider=github
+2025-12-08T12:08:06.9305170Z   • uploading       file=SIMPLIFIED-CYBER-DEFENCE-FOR-THREATS-1.0.0-arm64.dmg provider=github
+2025-12-08T12:08:07.2332850Z   • skipped publishing  file=SIMPLIFIED-CYBER-DEFENCE-FOR-THREATS-1.0.0-arm64.dmg.blockmap reason=release doesn't exist and not created because "publish" is not "always" and build is not on tag tag=v1.0.0 version=1.0.0
+2025-12-08T12:08:07.2449560Z   • skipped publishing  file=SIMPLIFIED-CYBER-DEFENCE-FOR-THREATS-1.0.0-arm64.dmg reason=release doesn't exist and not created because "publish" is not "always" and build is not on tag tag=v1.0.0 version=1.0.0
+2025-12-08T12:08:57.4866160Z   • building block map  blockMapFile=release/SIMPLIFIED CYBER DEFENCE FOR THREATS-1.0.0-arm64-mac.zip.blockmap
+2025-12-08T12:08:59.4761860Z   • uploading       file=SIMPLIFIED CYBER DEFENCE FOR THREATS-1.0.0-arm64-mac.zip.blockmap provider=github
+2025-12-08T12:08:59.4864490Z   • skipped publishing  file=SIMPLIFIED CYBER DEFENCE FOR THREATS-1.0.0-arm64-mac.zip.blockmap reason=release doesn't exist and not created because "publish" is not "always" and build is not on tag tag=v1.0.0 version=1.0.0
+2025-12-08T12:08:59.4967270Z   • uploading       file=SIMPLIFIED-CYBER-DEFENCE-FOR-THREATS-1.0.0-arm64-mac.zip provider=github
+2025-12-08T12:08:59.5069910Z   • skipped publishing  file=SIMPLIFIED-CYBER-DEFENCE-FOR-THREATS-1.0.0-arm64-mac.zip reason=release doesn't exist and not created because "publish" is not "always" and build is not on tag tag=v1.0.0 version=1.0.0
+2025-12-08T12:08:59.5172050Z   • skipped publishing  file=latest-mac.yml reason=release doesn't exist and not created because "publish" is not "always" and build is not on tag tag=v1.0.0 version=1.0.0
+2025-12-08T12:08:59.5460130Z ##[group]Run actions/upload-artifact@v4
+2025-12-08T12:08:59.5460720Z with:
+2025-12-08T12:08:59.5460940Z   name: macos-build
+2025-12-08T12:08:59.5461220Z   path: release/*.dmg
+release/*.zip
+
+2025-12-08T12:08:59.5461470Z   if-no-files-found: error
+2025-12-08T12:08:59.5461680Z   compression-level: 6
+2025-12-08T12:08:59.5461930Z   overwrite: false
+2025-12-08T12:08:59.5462210Z   include-hidden-files: false
+2025-12-08T12:08:59.5462420Z ##[endgroup]
+2025-12-08T12:09:00.3716730Z With the provided path, there will be 2 files uploaded
+2025-12-08T12:09:00.3895700Z Artifact name is valid!
+2025-12-08T12:09:00.3940910Z Root directory input is valid!
+2025-12-08T12:09:00.6579090Z Beginning upload of artifact content to blob storage
+2025-12-08T12:09:01.8884260Z Uploaded bytes 8388608
+2025-12-08T12:09:02.2184710Z Uploaded bytes 16777216
+2025-12-08T12:09:02.3447020Z Uploaded bytes 25165824
+2025-12-08T12:09:02.6499410Z Uploaded bytes 33554432
+2025-12-08T12:09:02.7611460Z Uploaded bytes 41943040
+2025-12-08T12:09:03.0053260Z Uploaded bytes 50331648
+2025-12-08T12:09:03.3472770Z Uploaded bytes 58720256
+2025-12-08T12:09:04.3657450Z Uploaded bytes 67108864
+2025-12-08T12:09:04.5788360Z Uploaded bytes 75497472
+2025-12-08T12:09:04.8374720Z Uploaded bytes 83886080
+2025-12-08T12:09:04.9145180Z Uploaded bytes 92274688
+2025-12-08T12:09:05.2643410Z Uploaded bytes 100663296
+2025-12-08T12:09:05.6367640Z Uploaded bytes 109051904
+2025-12-08T12:09:06.0893480Z Uploaded bytes 117440512
+2025-12-08T12:09:06.2760700Z Uploaded bytes 125829120
+2025-12-08T12:09:06.7014220Z Uploaded bytes 134217728
+2025-12-08T12:09:06.8625390Z Uploaded bytes 142606336
+2025-12-08T12:09:07.3815110Z Uploaded bytes 150994944
+2025-12-08T12:09:07.4824730Z Uploaded bytes 159383552
+2025-12-08T12:09:07.6587750Z Uploaded bytes 167772160
+2025-12-08T12:09:08.1161550Z Uploaded bytes 176160768
+2025-12-08T12:09:08.1965970Z Uploaded bytes 184549376
+2025-12-08T12:09:08.5162430Z Uploaded bytes 192937984
+2025-12-08T12:09:08.9452480Z Uploaded bytes 201326592
+2025-12-08T12:09:09.0838340Z Uploaded bytes 209715200
+2025-12-08T12:09:09.5477940Z Uploaded bytes 218103808
+2025-12-08T12:09:09.5478510Z Uploaded bytes 226492416
+2025-12-08T12:09:10.0516780Z Uploaded bytes 234881024
+2025-12-08T12:09:10.1542030Z Uploaded bytes 243269632
+2025-12-08T12:09:10.3451320Z Uploaded bytes 251658240
+2025-12-08T12:09:10.8720850Z Uploaded bytes 260046848
+2025-12-08T12:09:10.9631110Z Uploaded bytes 268435456
+2025-12-08T12:09:11.4547400Z Uploaded bytes 276824064
+2025-12-08T12:09:11.8817530Z Uploaded bytes 285212672
+2025-12-08T12:09:12.4347510Z Uploaded bytes 293601280
+2025-12-08T12:09:12.6812450Z Uploaded bytes 301989888
+2025-12-08T12:09:12.7115280Z Uploaded bytes 310378496
+2025-12-08T12:09:12.9561200Z Uploaded bytes 314717504
+2025-12-08T12:09:13.0395690Z Finished uploading artifact content to blob storage!
+2025-12-08T12:09:13.0498100Z SHA256 digest of uploaded artifact zip is 97d4e6800570d356e91f8e83465d058ead2fba35c6a8ab363b190ee5be7fc8eb
+2025-12-08T12:09:13.0598030Z Finalizing artifact upload
+2025-12-08T12:09:13.3661860Z Artifact macos-build.zip successfully finalized. Artifact ID 4796913215
+2025-12-08T12:09:13.3766360Z Artifact macos-build has been successfully uploaded! Final size is 314717504 bytes. Artifact ID is 4796913215
+2025-12-08T12:09:13.3869620Z Artifact download URL: https://github.com/Aravind-Raj007/rit/actions/runs/20027481612/artifacts/4796913215
+2025-12-08T12:09:13.4244320Z Post job cleanup.
+2025-12-08T12:09:13.7032400Z Post job cleanup.
+2025-12-08T12:09:13.9417170Z [command]/opt/homebrew/bin/git version
+2025-12-08T12:09:14.0123580Z git version 2.50.1
+2025-12-08T12:09:14.0638730Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/17bbb0b3-2ee2-4a89-9aa6-3b5f1b64a1f9/.gitconfig'
+2025-12-08T12:09:14.0745950Z Temporarily overriding HOME='/Users/runner/work/_temp/17bbb0b3-2ee2-4a89-9aa6-3b5f1b64a1f9' before making global git config changes
+2025-12-08T12:09:14.0850780Z Adding repository directory to the temporary git global config as a safe directory
+2025-12-08T12:09:14.0952180Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/rit/rit
+2025-12-08T12:09:14.1262960Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-12-08T12:09:14.1569200Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-12-08T12:09:14.3074650Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-12-08T12:09:14.3104680Z http.https://github.com/.extraheader
+2025-12-08T12:09:14.3240540Z [command]/opt/homebrew/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-12-08T12:09:14.3494430Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-12-08T12:09:14.4873050Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2025-12-08T12:09:14.5177830Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2025-12-08T12:09:14.6810830Z Cleaning up orphan processes

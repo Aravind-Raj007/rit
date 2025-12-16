@@ -48,12 +48,26 @@ function createWindow() {
  * App ready event - initialize database and create window
  */
 app.whenReady().then(() => {
-  // Initialize database
-  const dbResult = database.initialize();
-  if (dbResult.success) {
-    console.log('✅ Database ready at:', dbResult.path);
-  } else {
-    console.error('❌ Database initialization failed:', dbResult.error);
+  // Initialize database with error handling
+  try {
+    const dbResult = database.initialize();
+    if (dbResult.success) {
+      console.log('✅ Database ready at:', dbResult.path);
+      console.log('✅ Database initialized:', database.isInitialized());
+    } else {
+      console.error('❌ Database initialization failed:', dbResult.error);
+      // Show error dialog to user
+      dialog.showErrorBox(
+        'Database Error',
+        'Failed to initialize the database. The application may not work correctly.\n\nError: ' + dbResult.error
+      );
+    }
+  } catch (error) {
+    console.error('❌ Critical database error:', error);
+    dialog.showErrorBox(
+      'Critical Error',
+      'Failed to start the database. Please restart the application.\n\nError: ' + error.message
+    );
   }
 
   createWindow();

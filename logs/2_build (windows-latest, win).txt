@@ -1,0 +1,209 @@
+﻿2025-12-08T12:05:16.9699388Z Current runner version: '2.329.0'
+2025-12-08T12:05:16.9724609Z ##[group]Runner Image Provisioner
+2025-12-08T12:05:16.9725304Z Hosted Compute Agent
+2025-12-08T12:05:16.9725854Z Version: 20251124.448
+2025-12-08T12:05:16.9726378Z Commit: fda5086b43ec66ade217e5fcd18146c879571177
+2025-12-08T12:05:16.9727007Z Build Date: 2025-11-24T21:16:26Z
+2025-12-08T12:05:16.9727578Z ##[endgroup]
+2025-12-08T12:05:16.9728019Z ##[group]Operating System
+2025-12-08T12:05:16.9728598Z Microsoft Windows Server 2025
+2025-12-08T12:05:16.9729114Z 10.0.26100
+2025-12-08T12:05:16.9729578Z Datacenter
+2025-12-08T12:05:16.9729971Z ##[endgroup]
+2025-12-08T12:05:16.9730416Z ##[group]Runner Image
+2025-12-08T12:05:16.9730888Z Image: windows-2025
+2025-12-08T12:05:16.9731968Z Version: 20251125.122.1
+2025-12-08T12:05:16.9732962Z Included Software: https://github.com/actions/runner-images/blob/win25/20251125.122/images/windows/Windows2025-Readme.md
+2025-12-08T12:05:16.9734640Z Image Release: https://github.com/actions/runner-images/releases/tag/win25%2F20251125.122
+2025-12-08T12:05:16.9735602Z ##[endgroup]
+2025-12-08T12:05:16.9736591Z ##[group]GITHUB_TOKEN Permissions
+2025-12-08T12:05:16.9738328Z Contents: read
+2025-12-08T12:05:16.9738872Z Metadata: read
+2025-12-08T12:05:16.9739292Z Packages: read
+2025-12-08T12:05:16.9739736Z ##[endgroup]
+2025-12-08T12:05:16.9741736Z Secret source: Actions
+2025-12-08T12:05:16.9742353Z Prepare workflow directory
+2025-12-08T12:05:17.0083415Z Prepare all required actions
+2025-12-08T12:05:17.0136882Z Getting action download info
+2025-12-08T12:05:17.4393661Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2025-12-08T12:05:18.0482473Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2025-12-08T12:05:18.2293028Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2025-12-08T12:05:18.5830061Z Complete job name: build (windows-latest, win)
+2025-12-08T12:05:18.7414523Z ##[group]Run actions/checkout@v4
+2025-12-08T12:05:18.7416146Z with:
+2025-12-08T12:05:18.7417002Z   repository: Aravind-Raj007/rit
+2025-12-08T12:05:18.7418148Z   token: ***
+2025-12-08T12:05:18.7418810Z   ssh-strict: true
+2025-12-08T12:05:18.7419495Z   ssh-user: git
+2025-12-08T12:05:18.7420206Z   persist-credentials: true
+2025-12-08T12:05:18.7420992Z   clean: true
+2025-12-08T12:05:18.7421686Z   sparse-checkout-cone-mode: true
+2025-12-08T12:05:18.7422550Z   fetch-depth: 1
+2025-12-08T12:05:18.7423231Z   fetch-tags: false
+2025-12-08T12:05:18.7423945Z   show-progress: true
+2025-12-08T12:05:18.7424656Z   lfs: false
+2025-12-08T12:05:18.7425318Z   submodules: false
+2025-12-08T12:05:18.7426031Z   set-safe-directory: true
+2025-12-08T12:05:18.7427145Z ##[endgroup]
+2025-12-08T12:05:18.9154797Z Syncing repository: Aravind-Raj007/rit
+2025-12-08T12:05:18.9157247Z ##[group]Getting Git version info
+2025-12-08T12:05:18.9158204Z Working directory is 'D:\a\rit\rit'
+2025-12-08T12:05:19.0205576Z [command]"C:\Program Files\Git\bin\git.exe" version
+2025-12-08T12:05:19.4618622Z git version 2.52.0.windows.1
+2025-12-08T12:05:19.4679673Z ##[endgroup]
+2025-12-08T12:05:19.4705858Z Temporarily overriding HOME='D:\a\_temp\74cfa941-25ec-46eb-baf9-b2908a5bcb1f' before making global git config changes
+2025-12-08T12:05:19.4708149Z Adding repository directory to the temporary git global config as a safe directory
+2025-12-08T12:05:19.4718070Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\rit\rit
+2025-12-08T12:05:19.5500111Z Deleting the contents of 'D:\a\rit\rit'
+2025-12-08T12:05:19.5507835Z ##[group]Initializing the repository
+2025-12-08T12:05:19.5516985Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\rit\rit
+2025-12-08T12:05:19.6419430Z Initialized empty Git repository in D:/a/rit/rit/.git/
+2025-12-08T12:05:19.6464606Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/Aravind-Raj007/rit
+2025-12-08T12:05:19.7080047Z ##[endgroup]
+2025-12-08T12:05:19.7083648Z ##[group]Disabling automatic garbage collection
+2025-12-08T12:05:19.7095544Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2025-12-08T12:05:19.7425891Z ##[endgroup]
+2025-12-08T12:05:19.7426662Z ##[group]Setting up auth
+2025-12-08T12:05:19.7440501Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2025-12-08T12:05:19.7736785Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2025-12-08T12:05:21.3956356Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-12-08T12:05:21.4248913Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2025-12-08T12:05:21.9512430Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2025-12-08T12:05:21.9809794Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2025-12-08T12:05:22.5095063Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2025-12-08T12:05:22.5411056Z ##[endgroup]
+2025-12-08T12:05:22.5411805Z ##[group]Fetching the repository
+2025-12-08T12:05:22.5425295Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5ffca424d059a4dcfa6a76771983c2c9da123055:refs/remotes/origin/main
+2025-12-08T12:05:23.7665689Z From https://github.com/Aravind-Raj007/rit
+2025-12-08T12:05:23.8088804Z  * [new ref]         5ffca424d059a4dcfa6a76771983c2c9da123055 -> origin/main
+2025-12-08T12:05:23.8089968Z ##[endgroup]
+2025-12-08T12:05:23.8090441Z ##[group]Determining the checkout info
+2025-12-08T12:05:23.8091494Z ##[endgroup]
+2025-12-08T12:05:23.8101065Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2025-12-08T12:05:23.8584146Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2025-12-08T12:05:23.8882855Z ##[group]Checking out the ref
+2025-12-08T12:05:23.8883378Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+2025-12-08T12:05:23.9571783Z branch 'main' set up to track 'origin/main'.
+2025-12-08T12:05:23.9579710Z Switched to a new branch 'main'
+2025-12-08T12:05:23.9619736Z ##[endgroup]
+2025-12-08T12:05:24.0073011Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2025-12-08T12:05:24.0342414Z 5ffca424d059a4dcfa6a76771983c2c9da123055
+2025-12-08T12:05:24.0768287Z ##[group]Run actions/setup-node@v4
+2025-12-08T12:05:24.0769072Z with:
+2025-12-08T12:05:24.0769340Z   node-version: 20
+2025-12-08T12:05:24.0769591Z   always-auth: false
+2025-12-08T12:05:24.0769823Z   check-latest: false
+2025-12-08T12:05:24.0770208Z   token: ***
+2025-12-08T12:05:24.0770412Z ##[endgroup]
+2025-12-08T12:05:24.3299417Z Found in cache @ C:\hostedtoolcache\windows\node\20.19.5\x64
+2025-12-08T12:05:24.3309980Z ##[group]Environment details
+2025-12-08T12:05:29.6928864Z node: v20.19.5
+2025-12-08T12:05:29.6929284Z npm: 10.8.2
+2025-12-08T12:05:29.6929503Z yarn: 1.22.22
+2025-12-08T12:05:29.6931204Z ##[endgroup]
+2025-12-08T12:05:29.7204776Z ##[group]Run npm install
+2025-12-08T12:05:29.7205074Z [36;1mnpm install[0m
+2025-12-08T12:05:29.7990641Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2025-12-08T12:05:29.7991030Z ##[endgroup]
+2025-12-08T12:05:52.7468279Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+2025-12-08T12:05:53.4559901Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+2025-12-08T12:05:54.3752363Z npm warn deprecated boolean@3.2.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+2025-12-08T12:06:17.3947836Z 
+2025-12-08T12:06:17.3948994Z added 375 packages, and audited 376 packages in 40s
+2025-12-08T12:06:17.3949921Z 
+2025-12-08T12:06:17.3950193Z 58 packages are looking for funding
+2025-12-08T12:06:17.3951212Z   run `npm fund` for details
+2025-12-08T12:06:17.4097078Z 
+2025-12-08T12:06:17.4097445Z 1 moderate severity vulnerability
+2025-12-08T12:06:17.4107396Z 
+2025-12-08T12:06:17.4108025Z To address all issues (including breaking changes), run:
+2025-12-08T12:06:17.4126821Z   npm audit fix --force
+2025-12-08T12:06:17.4128832Z 
+2025-12-08T12:06:17.4129322Z Run `npm audit` for details.
+2025-12-08T12:06:18.2570443Z ##[group]Run npm run build
+2025-12-08T12:06:18.2570766Z [36;1mnpm run build[0m
+2025-12-08T12:06:18.2638204Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2025-12-08T12:06:18.2638514Z ##[endgroup]
+2025-12-08T12:06:18.8767519Z 
+2025-12-08T12:06:18.8768288Z > cyberguard-lite@1.0.0 build
+2025-12-08T12:06:18.8768798Z > next build
+2025-12-08T12:06:18.8768980Z 
+2025-12-08T12:06:19.5991240Z ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+2025-12-08T12:06:19.6052018Z Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2025-12-08T12:06:19.6053243Z This information is used to shape Next.js' roadmap and prioritize features.
+2025-12-08T12:06:19.6054506Z You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2025-12-08T12:06:19.6055071Z https://nextjs.org/telemetry
+2025-12-08T12:06:19.6055336Z 
+2025-12-08T12:06:19.6733072Z   ▲ Next.js 14.2.33
+2025-12-08T12:06:19.6733751Z 
+2025-12-08T12:06:19.6739791Z    Linting and checking validity of types ...
+2025-12-08T12:06:19.8464634Z    Creating an optimized production build ...
+2025-12-08T12:06:29.8495340Z  ✓ Compiled successfully
+2025-12-08T12:06:29.8504721Z    Collecting page data ...
+2025-12-08T12:06:30.5162166Z    Generating static pages (0/3) ...
+2025-12-08T12:06:30.7702235Z  ✓ Generating static pages (3/3)
+2025-12-08T12:06:30.9802213Z    Finalizing page optimization ...
+2025-12-08T12:06:30.9802733Z    Collecting build traces ...
+2025-12-08T12:06:37.1749488Z 
+2025-12-08T12:06:37.1792455Z Route (pages)                             Size     First Load JS
+2025-12-08T12:06:37.1793659Z ┌ ○ /                                     12.4 kB        92.4 kB
+2025-12-08T12:06:37.1794404Z ├   └ css/3e3a26ef413674a5.css            4.99 kB
+2025-12-08T12:06:37.1795094Z ├   /_app                                 0 B              80 kB
+2025-12-08T12:06:37.1796018Z └ ○ /404                                  180 B          80.1 kB
+2025-12-08T12:06:37.1796885Z + First Load JS shared by all             80.8 kB
+2025-12-08T12:06:37.1797522Z   ├ chunks/framework-64ad27b21261a9ce.js  44.8 kB
+2025-12-08T12:06:37.1798234Z   ├ chunks/main-bec63c43e6b8f591.js       34.1 kB
+2025-12-08T12:06:37.1798772Z   └ other shared chunks (total)           1.9 kB
+2025-12-08T12:06:37.1798981Z 
+2025-12-08T12:06:37.1799175Z ○  (Static)  prerendered as static content
+2025-12-08T12:06:37.1799357Z 
+2025-12-08T12:06:37.3415812Z ##[group]Run npx electron-builder --win
+2025-12-08T12:06:37.3416177Z [36;1mnpx electron-builder --win[0m
+2025-12-08T12:06:37.3484503Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2025-12-08T12:06:37.3484807Z env:
+2025-12-08T12:06:37.3485787Z   GH_TOKEN: ***
+2025-12-08T12:06:37.3485985Z ##[endgroup]
+2025-12-08T12:06:39.2048967Z   • electron-builder  version=24.13.3 os=10.0.26100
+2025-12-08T12:06:39.2054842Z   • artifacts will be published if draft release exists  reason=CI detected
+2025-12-08T12:06:39.2160360Z   • loaded configuration  file=D:\a\rit\rit\electron-builder.json
+2025-12-08T12:06:39.4255592Z   • rebuilding native dependencies  dependencies=bcrypt@6.0.0, better-sqlite3@12.5.0 platform=win32 arch=x64
+2025-12-08T12:06:39.4256595Z   • install prebuilt binary  name=better-sqlite3 version=12.5.0 platform=win32 arch=x64 napi=
+2025-12-08T12:06:39.8065380Z   • build native dependency from sources  name=better-sqlite3
+2025-12-08T12:06:39.8065913Z                                           version=12.5.0
+2025-12-08T12:06:39.8066242Z                                           platform=win32
+2025-12-08T12:06:39.8066596Z                                           arch=x64
+2025-12-08T12:06:39.8067121Z                                           napi=
+2025-12-08T12:06:39.8067909Z                                           reason=prebuild-install failed with error (run with env DEBUG=electron-builder to get more information)
+2025-12-08T12:06:39.8068977Z                                           error=prebuild-install info begin Prebuild-install version 7.1.3
+2025-12-08T12:06:39.8069988Z     prebuild-install warn install prebuilt binaries enforced with --force!
+2025-12-08T12:06:39.8071007Z     prebuild-install warn install prebuilt binaries may be out of date!
+2025-12-08T12:06:39.8072314Z     prebuild-install info looking for local prebuild @ prebuilds\better-sqlite3-v12.5.0-electron-v118-win32-x64.tar.gz
+2025-12-08T12:06:39.8073951Z     prebuild-install info looking for cached prebuild @ C:\npm\cache\_prebuilds\f9779e-better-sqlite3-v12.5.0-electron-v118-win32-x64.tar.gz
+2025-12-08T12:06:39.8075279Z     prebuild-install http request GET https://github.com/WiseLibs/better-sqlite3/releases/download/v12.5.0/better-sqlite3-v12.5.0-electron-v118-win32-x64.tar.gz
+2025-12-08T12:06:39.8076778Z     prebuild-install http 404 https://github.com/WiseLibs/better-sqlite3/releases/download/v12.5.0/better-sqlite3-v12.5.0-electron-v118-win32-x64.tar.gz
+2025-12-08T12:06:39.8077896Z     prebuild-install warn install No prebuilt binaries found (target=27.3.11 runtime=electron arch=x64 libc= platform=win32)
+2025-12-08T12:06:39.8078473Z     
+2025-12-08T12:07:32.9884649Z   • packaging       platform=win32 arch=x64 electron=27.3.11 appOutDir=release\win-unpacked
+2025-12-08T12:07:33.1440847Z   • downloading     url=https://github.com/electron/electron/releases/download/v27.3.11/electron-v27.3.11-win32-x64.zip size=105 MB parts=8
+2025-12-08T12:07:33.4104691Z   • downloaded      url=https://github.com/electron/electron/releases/download/v27.3.11/electron-v27.3.11-win32-x64.zip duration=406ms
+2025-12-08T12:07:43.0552402Z   • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z size=5.6 MB parts=1
+2025-12-08T12:07:43.0962528Z   • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z duration=285ms
+2025-12-08T12:07:44.0053958Z   • building        target=nsis file=release\SIMPLIFIED CYBER DEFENCE FOR THREATS Setup 1.0.0.exe archs=x64 oneClick=false perMachine=false
+2025-12-08T12:07:44.0088955Z   ⨯ cannot find specified resource "assets/icon.ico", nor relative to "D:\a\rit\rit\assets", neither relative to project dir ("D:\a\rit\rit")
+2025-12-08T12:07:44.1394849Z ##[error]Process completed with exit code 1.
+2025-12-08T12:07:44.1612210Z Post job cleanup.
+2025-12-08T12:07:44.3828505Z [command]"C:\Program Files\Git\bin\git.exe" version
+2025-12-08T12:07:44.4098613Z git version 2.52.0.windows.1
+2025-12-08T12:07:44.4170861Z Temporarily overriding HOME='D:\a\_temp\7720bf53-637a-4d44-8f30-3473a88bbabc' before making global git config changes
+2025-12-08T12:07:44.4171673Z Adding repository directory to the temporary git global config as a safe directory
+2025-12-08T12:07:44.4181892Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\rit\rit
+2025-12-08T12:07:44.4489276Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2025-12-08T12:07:44.4812853Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2025-12-08T12:07:45.0178083Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-12-08T12:07:45.0440243Z http.https://github.com/.extraheader
+2025-12-08T12:07:45.0482877Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2025-12-08T12:07:45.0798067Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2025-12-08T12:07:45.6315533Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2025-12-08T12:07:45.6616570Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2025-12-08T12:07:46.2800155Z Cleaning up orphan processes
+2025-12-08T12:07:46.3280558Z Terminate orphan process: pid (1292) (vctip)
